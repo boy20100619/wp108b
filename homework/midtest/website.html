@@ -6,32 +6,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 header{
-  background-color: #666;
-  padding: 30px;
   text-align: center;
-  font-size: 35px;
-  color: white;
-  }
+  font-size: 30px;
+  color: rgb(220, 231, 231);
+  font-family: DFKai-SB;
+  font-weight: bolder;
+}
+.one {
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.one a{
+  padding: 10px 5px 20px 20px;
+  font-size: 25px;
+  color: aqua;
+  display: block;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+.one a:hover{
+  color: darkgrey;
+}
+.two{
+  background-color: mediumseagreen;
+  float: left;
+}
+.two a{
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-family: Microsoft JhengHei;
+  color: rgb(34, 34, 34);
+}
+.two a:hover{
+  background-color: forestgreen;
+  color: azure;
+}
+.three{
+  float: right;
+}
+.hid{
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgb(91, 238, 157);
+}
+.hid a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 25px;
+}
+.three:hover .hid{
+  display: block;
+}
+.four{
+  background-color: mediumseagreen;
+  height: 40px;
+}
+.four p{
+  color: mediumseagreen;
+  font-size: 0px;
+}
+body{
+  background-image: url('miku1.jpeg');
+  background-size: cover;
+}
+.home{
+  margin: 50px 80mm 50px 80mm;
+  border: 4px ridge skyblue;
+  font-family: DFKai-SB;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(23, 247, 255, 0.5);
+}
+ul li{
+  margin-left: 90mm;
+  text-align: left;
+}
+footer {
+  background-color: mediumseagreen;
+  margin-top: 60mm;
+  padding: 1px;
+  text-align: center;
+  color: rgb(41, 41, 41);
+}
+
 </style>
 </head>
-  
+<header>
+   <p>梁齊恆<span style="font-size: 20px;padding-left: 5px;"> —LIANG, CI-HENG</span></p>
+</header>  
+
 <body>
-<header> <h2>主頁</h2> </header>
-  
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <div id="mySidenav" class="one">
+    <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+    <a href="https://www.facebook.com/profile.php?id=100001242881391" target="_blank">Facebook</a>
+    <a href="https://twitter.com/boy20100619" target="_blank">twitter</a>
+    <a href="#">聯繫我</a>
+  </div>
+  <div class="two">
+    <span style="font-size: 30px;cursor:pointer;font-weight: bold" onclick="openNav()">&#9776;More</span>
+    <a href="#">主頁</a>
+    <a href="#">基本資料</a>
+    <a href="#">興趣</a>
+    <div class="three">
+      <a href="#">常用網站</a>
+      <div class="hid">
+        <a href="https://www.gamer.com.tw/">巴哈姆特</a>
+        <a href="https://www.pixiv.net/">Pixiv</a>
+        <a href="https://www.bilibili.com/">bilibili</a>
+      </div>
     </div>
   </div>
-</div>
+  <div class="four">
+    <p>0</p>
+  </div>
+  <div class="home"><span style="font-size: 40px;">學歷:</span>
+    <ul>
+      <li>崇光國民小學</li>
+      <li>光榮國民中學</li>
+      <li>市立大里高中</li>
+    </ul>
+    <hr>
+    <img src="99287061_3191938784190853_3981305190128025600_n.jpg" height="300px" width="200px">
+  </div>
+
+  <audio src="[Muse Dash] Ueta Tori Tachi (飢えた鳥たち) - MusikM【FULL】.mp3" controls autoplay="1"></audio>
   
+  <footer>
+    <p>最新更動2020.5</p>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
+
+
 </html> 
