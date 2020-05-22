@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>個人網站</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(220, 231, 231);
+  font-family: DFKai-SB;
+  font-weight: bolder;
+}
+.one {
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.one a{
+  padding: 10px 5px 20px 20px;
+  font-size: 25px;
+  color: aqua;
+  display: block;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+.one a:hover{
+  color: darkgrey;
+}
+.two{
+  background-color: mediumseagreen;
+  float: left;
+}
+.two a{
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-family: Microsoft JhengHei;
+  color: rgb(34, 34, 34);
+}
+.two a:hover{
+  background-color: forestgreen;
+  color: azure;
+}
+.three{
+  float: right;
+}
+.hid{
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgb(91, 238, 157);
+}
+.hid a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 25px;
+}
+.three:hover .hid{
+  display: block;
+}
+.four{
+  background-color: mediumseagreen;
+  height: 40px;
+}
+.four p{
+  color: mediumseagreen;
+  font-size: 0px;
+}
+body{
+  background-image: url('miku1.jpeg');
+  background-size: contain;
+}
+.home{
+  margin: 50px 80mm 50px 80mm;
+  border: 4px ridge skyblue;
+  font-family: DFKai-SB;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(23, 247, 255, 0.5);
+}
+
+footer {
+  background-color: mediumseagreen;
+  margin-top: 60mm;
+  padding: 1px;
+  text-align: center;
+  color: rgb(41, 41, 41);
+}
+.fun{
+    border: 10px ridge aqua;
+    margin: 100px;
+    color: rgb(0, 71, 71);
+    background-color: rgba(169, 169, 169, 0.5);
+    font-family: NSimSun;
+    font-size: 25px;
+    text-align: center;
+
+}
+ul li{
+    margin-left: 30mm;
+    text-align: left;
+    font-weight: bolder;
+    float: left;
+    padding-top: 100px;
+}
+
+
+</style>
+</head>
+<header>
+   <p>梁齊恆<span style="font-size: 20px;padding-left: 5px;"> —LIANG, CI-HENG</span></p>
+</header>  
+
+<body>
+  <div id="mySidenav" class="one">
+    <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+    <a href="https://www.facebook.com/profile.php?id=100001242881391" target="_blank">Facebook</a>
+    <a href="https://twitter.com/boy20100619" target="_blank">twitter</a>
+    <a href="#">聯繫我</a>
+  </div>
+  <div class="two">
+    <span style="font-size: 30px;cursor:pointer;font-weight: bold" onclick="openNav()">&#9776;More</span>
+    <a href="website.html">主頁</a>
+    <a href="base.html">基本資料</a>
+    <a href="fun.html">興趣</a>
+    <div class="three">
+      <a href="#">常用網站</a>
+      <div class="hid">
+        <a href="https://www.gamer.com.tw/">巴哈姆特</a>
+        <a href="https://www.pixiv.net/">Pixiv</a>
+        <a href="https://www.bilibili.com/">bilibili</a>
+      </div>
+    </div>
+  </div>
+  <div class="four">
+    <p>0</p>
+  </div>
+  <div class="fun">
+    <h2>興趣</h2>
+    <hr>
+  <h3>聽歌：vocaloid</h3>
+  <ul>
+      <li>DIVELA</li>
+      <li>Deco*27</li>
+      <li>八王子</li>
+      <li>ナユタン星人</li>
+  </ul>
+  <img src="miku.jpg">
+  <p>只要你有聽過，我們就是好朋友，如果你都沒聽過，也是可以找我交流</p>
+  <P>※大推DIVELA</P>
+  <hr>
+  <h3>看動漫</h3>
+  <p>固定會追新番，個人喜歡一些日常萌廢的，有推薦的可以跟我說喔</p>
+  <hr>
+  <h3>玩遊戲</h3>
+  <p>音遊手殘照樣玩，最近在玩崩壞3，求同好</p>
+  <img src="selre.png">
+  </div>
+  <footer>
+    <p>最新更動2020.5</p>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+
+
+</html> 
