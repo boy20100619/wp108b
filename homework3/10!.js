@@ -1,5 +1,5 @@
 a=1;
-for(i=1;i<=10;i++){
-    a=a*i;
+for(b=1;b<=10;b++){
+    a=a*b;
 }
 console.log('10!=',a);
