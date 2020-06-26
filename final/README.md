@@ -6,9 +6,8 @@
 * 圖片來源:圖片素材網站 https://zh.pngtree.com/ 及部分自製
 ----------------------------------------------------------
 ## 作品大部分參考來源:老師的pos系統,w3school範例
-**從老師的pos系統開始理解**
-* 1.
-* 2.
-* 3.
-* 4.
+從老師的pos系統開始理解(https://ccccourse.github.io/wp/code/08-app2/pos/06-report/index.html?fbclid=IwAR3raBnK6bzW51XkS_iEHFIQM-EdvGLSefnya2scwnnNNg5L61MChRrJVQA)
+* 1.從中優化部分不合理的錯誤(如:金額呈負數)，並加入一些功能使其完善
+* 2.在首頁放入幻燈片，並重新調整各js文件，使用pos時屏蔽
+* 3.調整側欄及美化
 ## 理解程度
