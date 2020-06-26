@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+
+<header>
+    <div class="navbar" style="float:right">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-user"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="login.html">登入</a>
+          <a href="#logout">登出</a>
+          <a href="signup.html">註冊</a>
+        </div>
+      </div>
+      <a href="index.html" style="background-color: brown;font-weight: bolder;width: 80px;">回首頁</a>
+    </div>
+</header>
+<style>
+    * {
+      font-size: 16px;
+      
+    }
+    
+    textarea {
+      width: 80%;
+      height: 80px;
+    }
+    button {
+      padding: 10px;
+      background-color: rgb(38, 211, 110);
+      border: 1px solid rgb(38, 211, 110);
+    }
+    input {
+      padding: 6px;
+      font-size: 16px;
+    }
+    
+    input, textarea, button {
+      border-radius: 5px;
+    }
+
+    .main{
+        margin: 55px 10px 10px 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    </style>
+
+<body>
+    <div class="main">
+        <form>
+            <fieldset>
+              <legend>個人資料</legend>
+            <label for="username">帳號:</label><br>
+            <input type="text" id="username" name="username" required="required"><br>
+            <label for="pwd">密碼:</label><br>
+            <input type="password" id="pwd" name="pwd" required="required"><br/>
+            <label for="email">信箱:</label><br>
+            <input type="email" id="email" name="email" required="required"></br>
+            <br><br/>
+          
+            <label>血型：</label><br>
+          <select id="cars" name="cars">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+          </select><br/>
+          <label for="gender">性別：</label><br>
+          <input type="radio" id="gender"name="gender" value="male">
+          <label for="male">男</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="male">女</label><br/>
+          
+            <label for="birthday">生日：</label><br/>
+            <input type="date" id="birthday" name="birthday" required="required">
+            <br/>
+            <br><br/>
+            <label style="font-size: 20px;font-weight: bolder;">留言:</label><br/>
+          <textarea name="message">
+          
+          </textarea>
+          <br/><br/>
+              <button><a href="index.html" style="color: azure;">註冊</a></button>
+              <br/><br/>
+            </fieldset>
+          </form>      
+    </div>
+</body>
+
+</html>
